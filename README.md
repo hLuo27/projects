@@ -1,7 +1,7 @@
 # Projects
 
 
-**H. Luo**. "Predicting Batting Performance with Ensemble Neural Nets and Data Augmentation in Baseball Simulator". September 2020. [[pdf]](2020-09 Predicting Batting Performance with Ensemble Neural Nets and Data Augmentation in Baseball Simulator.pdf)
+**H. Luo**. "Predicting Batting Performance with Ensemble Neural Nets and Data Augmentation in Baseball Simulator". September 2020. [[pdf]]('2020-09 Predicting Batting Performance with Ensemble Neural Nets and Data Augmentation in Baseball Simulator'.pdf)
 
 - Developing a metric to evaluate batting performance, identifying the drivers of increased offensive ability, and using ensemble neural net architecture with data augmentation to improve prediction of batting performance for 20,868 seasons in a baseball simulator.
 
