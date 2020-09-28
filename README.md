@@ -1,7 +1,7 @@
 # Projects
 
 
-**H. Luo**. "Predicting Batting Performance with Ensemble Neural Nets and Data Augmentation in Baseball Simulator". September 2020. [[pdf]]('2020-09 Predicting Batting Performance with Ensemble Neural Nets and Data Augmentation in Baseball Simulator'.pdf)
+**H. Luo**. "Predicting Batting Performance with Ensemble Neural Nets and Data Augmentation in Baseball Simulator". September 2020. [[pdf]](2020-09 Predicting Batting Performance with Ensemble Neural Nets and Data Augmentation in Baseball Simulator.pdf)
 
 - Developing a metric to evaluate batting performance, identifying the drivers of increased offensive ability, and using ensemble neural net architecture with data augmentation to improve prediction of batting performance for 20,868 seasons in a baseball simulator.
 
@@ -9,7 +9,7 @@
 
 - Scraping and analysis of 108,488 draft picks from 23 seasons based on various draft metrics in a baseball simulator.
 
-B. Liang, S. Le, **H. Luo**, et al. "Food Insecurity in Alameda County: Modelling Food Need and Access". Statistics Undergraduate Students Association project. December 2017. [[pdf]](2017-12 Food Insecurity in Alameda County Modelling Food Need and Access.pdf)
+B. Liang, S. Le, **H. Luo**, et al. "Food Insecurity in Alameda County: Modelling Food Need and Access". Statistics Undergraduate Students Association project. December 2017. [[pdf]](2017_12_Food_Insecurity_in_Alameda_County_Modelling_Food_Need_and_Access.pdf)
 
 - Analysis and predictive modelling of pounds of food unmet by local supply in Alameda County.
 
