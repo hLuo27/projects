@@ -1,0 +1,9 @@
+*.ipynb_checkpoints/
+*.idea/
+*__pycache__/
+*packages/
+*.Rhistory
+*.html
+*.exe
+*.spec
+data/
