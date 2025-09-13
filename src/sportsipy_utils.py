@@ -3,11 +3,11 @@ import sys
 import pandas as pd
 from tqdm import tqdm
 import sportsipy.nhl.schedule as nhl_schedule
+from sportsipy.nhl.teams import Teams
 import time
 from typing import Dict
 import polars as pl
 import pytz
-from datetime import datetime
 
 base_dir = (os.path.join(os.path.dirname(__file__), '../').replace("\\", "/").replace("src/../", "")
             .replace("etl/../", "")
@@ -48,7 +48,7 @@ def get_nhl_game_details(g: nhl_schedule.Game) -> Dict:
     return dict_g
 
 
-def pull_sportsipy_nhl(team_abbr: str, year: int) -> pl.DataFrame:
+def pull_nhl_schedule(team_abbr: str, year: int) -> pl.DataFrame:
     """
     Pull hockey-reference schedule data for a specific team
     :param team_abbr: str
@@ -80,6 +80,27 @@ def pull_sportsipy_nhl(team_abbr: str, year: int) -> pl.DataFrame:
         df_games = pd.DataFrame(df_games)
         df_games.to_csv(cache_filepath_raw, index=False)
 
-    utils.logger.info(f"Reading raw sportsipy data from {cache_filepath_raw}")
     df_games = pl.scan_csv(cache_filepath_raw).collect()
     return df_games
+
+
+def pull_nhl_schedule_all(year: int) -> pl.DataFrame:
+    """
+    Pull all schedule data for NHL teams in a year
+    :param year: int
+    :return: pl.DataFrame
+    """
+    all_teams = Teams(year)
+    utils.logger.info(f"Pulling schedules for {len(all_teams)} NHL teams in {year}")
+
+    df_schedule_all = []
+    for t in tqdm(all_teams):
+        df_schedule_t = pull_nhl_schedule(t.abbreviation, year)
+        if not df_schedule_t.is_empty():
+            df_schedule_all += [df_schedule_t]
+
+    if len(df_schedule_all) > 0:
+        return pl.concat(df_schedule_all)
+    else:
+        utils.logger.warning(f"No schedules found for any NHL teams in {year}")
+        return pl.DataFrame()
