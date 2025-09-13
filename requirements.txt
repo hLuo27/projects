@@ -5,3 +5,4 @@ git+https://github.com/davidjkrause/sportsipy@master
 polars==1.33.1
 tqdm==4.67.1
 pyarrow==21.0.0
+openpyxl==3.1.5
