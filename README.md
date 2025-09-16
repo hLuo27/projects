@@ -14,5 +14,6 @@
 
 ## Personal Projects
 
+- **NHL Trap Games: A Systematic Analysis**. September 2025[[pdf]](pdf/2025-09-13%20NHL%20Trap%20Games.pdf) [[one-pager]](pdf/2025-09-13%20NHL%20Trap%20Games%20One-Pager.pdf)
 - **Predicting Batting Performance with Ensemble Neural Nets and Data Augmentation in Baseball Simulator**. September 2020. [[pdf]](pdf/2020-09-01%20Predicting%20Batting%20Performance.pdf)
 - **Identifying Optimal Draft Strategies in a Baseball Simulator**. June 2020 [[pdf]](pdf/2020-06-01%20Identifying%20Optimal%20Draft%20Strategies.pdf) 
